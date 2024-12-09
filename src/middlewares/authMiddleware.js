@@ -1,5 +1,5 @@
-import User from "../models/user.model";
-import asyncHandler from "./asyncHandler";
+import User from "../models/user.model.js";
+import asyncHandler from "./asyncHandler.js";
 
 const authenticate = asyncHandler(async (req, res, next) => {
   let token;

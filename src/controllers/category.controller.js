@@ -1,5 +1,5 @@
-import Category from "../models/category.model";
-import asyncHandler from "../middlewares/asyncHandler";
+import Category from "../models/category.model.js";
+import asyncHandler from "../middlewares/asyncHandler.js";
 
 const createCategory = asyncHandler(async (req, res) => {
   try {

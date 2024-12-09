@@ -1,10 +1,12 @@
 import express from "express";
-import { authenticate, authorizeAdmin } from "../middlewares/authMiddleware";
+import { authenticate, authorizeAdmin } from "../middlewares/authMiddleware.js";
 import {
   createCategory,
+  listCategory,
+  readCategory,
   removeCategory,
   updateCategory,
-} from "../controllers/category.controller";
+} from "../controllers/category.controller.js";
 
 const router = express.Router();
 
